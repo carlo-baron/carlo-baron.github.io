@@ -261,6 +261,7 @@
 }
 /* #endregion */
 
+/* #region 450px PHONE */
 @media screen and (max-width: 450px) {
   .text h1{
     font-size: 1cm;
@@ -273,6 +274,10 @@
   }
   .mid p{
     text-indent: 0in;
+    font-size: 15px;
+  }
+  .bot p{
+    font-size: 10px;
   }
 
   .spots {
@@ -301,3 +306,4 @@
     font-size: 18px;
   }
 }
+/* #endregion */

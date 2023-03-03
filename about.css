@@ -10,7 +10,10 @@ body{
     background-color: #171717;
     height: 100%;
 }
-
+/* #region Default Size */
+.container{
+  min-height: calc(100% - 10px);
+}
 .tab{
     margin-top: 37px;
     line-height: 20px;
@@ -48,46 +51,26 @@ h1{
     margin: 50px;
 }
 .project-details p{
-    text-indent: 1in;
+    /* text-indent: 1in; */
     margin-top: 50px;
 }
-
-.submission{
-    margin-top: 37px;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
+.disclaimer{
+  text-align: center;
 }
-.submission div{
-    margin-right: 50px;
-    margin-left: 30px;
-    /* margin-top: 30px;
-    margin-bottom: 50px; */
-    white-space: nowrap;
-}
-
-.submission p{
-    font-size: 15px;
-}
-
 .credits{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
 }
 a{
-    text-decoration: none;
-    font-size: 10px;
-    color:#cccc;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.733);
+  text-decoration: none;
 }
 
-
+/* #region loading */
 .loading-wrapper{
     background-color: #171717;
     width: 100%;
@@ -153,5 +136,15 @@ a{
   }
   100% {
     transform: translate(24px, 0);
+  }
+}
+/* #endregion */
+
+@media screen and (min-width: 600px) {
+  h1{
+    font-size: 40px;
+  }
+  .submission{
+    font-size: 13px;
   }
 }
