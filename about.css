@@ -13,7 +13,6 @@ body{
 
 .tab{
     margin-top: 37px;
-    font-size: 16px;
     line-height: 20px;
     display: flex;
     align-items: center;
@@ -27,6 +26,7 @@ body{
 }
 .tab a{
     text-decoration: none;
+    font-size: 16px;
 }
 .home{
     color: rgba(255, 255, 255, 0.767);

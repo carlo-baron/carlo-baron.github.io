@@ -225,7 +225,7 @@
 }
 /* #endregion */
 
-/* 600px PHONE */
+/* #region 600px PHONE */
 @media screen and (max-width: 600px) {
   .text h1{
     font-size: 1.25cm;
@@ -235,6 +235,9 @@
   }
   .bot h1{
     font-size: 1.05cm;
+  }
+  .mid p{
+    text-indent: 0in;
   }
 
   .spots {
@@ -248,6 +251,48 @@
   .spots img{
     width: 100%;
     max-height: 100px;
+  }
+
+  .travel button {
+    width: 200px;
+    height: 66.7px;
+    font-size: 18px;
+  }
+}
+/* #endregion */
+
+@media screen and (max-width: 450px) {
+  .text h1{
+    font-size: 1cm;
+  }
+  .mid h1{
+    font-size: 0.95cm;
+  }
+  .bot h1{
+    font-size: 0.95cm;
+  }
+  .mid p{
+    text-indent: 0in;
+  }
+
+  .spots {
+    grid-template-areas:
+      "card1 card1"
+      "card2 card3"
+      "card4 card5";
+    grid-template-columns: 50% 50%;
+
+  }
+  .spots img{
+    width: 100%;
+    max-height: 100px;
+  }
+
+  .travel{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .travel button {
