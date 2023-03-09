@@ -72,7 +72,7 @@
 .mid p {
   text-indent: 1in;
   font-size: 20px;
-  padding: 50px 50px 10px 50px;
+  margin: 50px 50px 10px 50px;
 }
 /* #endregion */
 
@@ -81,42 +81,26 @@
   text-align: center;
 }
 .bot h1 {
-  padding-top: 100px;
+  margin-top: 100px;
   font-size: 1.5cm;
   text-align: center;
   text-transform: uppercase;
 }
-.spots {
-  height: 450px;
-  margin: 50px;
-  display: grid;
-  gap: 0.5em;
-  grid-template-areas:
-    "card1 card2 card3"
-    "card1 card4 card5";
-  grid-template-columns: 1fr 20% 20%;
-  /* font-size: 11px; */
+.spots{
+  display:flex;
+  margin: 50px 50px 10px 50px;
+  align-items: center;
 }
-.spots > div {
-  border: 2px solid #171717;
+.spots img{
+  width: 500px;
   border-radius: 10px;
-  position: relative;
-  overflow-y: scroll;
-
+  border: 3px double black;
+}
+.spots p{
+  font-size: 20px;
+  margin: 0 50px 0 50px;
 }
 
-.spots > div:first-child {
-  grid-area: card1;
-}
-
-.spots img {
-  border-radius: 10px;
-  width: 100%;
-  max-height: 300px;
-  animation: reverse;
-  animation-duration: 0.75s;
-  object-fit: cover;
-}
 /* #endregion */
 
 /* #region Travel Buttons */
@@ -235,22 +219,10 @@
   }
   .bot h1{
     font-size: 1.05cm;
+    margin-bottom: 50px;
   }
   .mid p{
     text-indent: 0in;
-  }
-
-  .spots {
-    grid-template-areas:
-      "card1 card1"
-      "card2 card3"
-      "card4 card5";
-    grid-template-columns: 50% 50%;
-
-  }
-  .spots img{
-    width: 100%;
-    max-height: 100px;
   }
 
   .travel button {
@@ -258,39 +230,54 @@
     height: 66.7px;
     font-size: 18px;
   }
+  .spots{
+    flex-flow: column;
+    margin: 0 50px 0 50px;
+  }
+
+  .spots p{
+    margin: 10px 0 50px 0;
+  }
+  #a{order: 1;}
+  #b{order: 2;}
+  .travel button {
+    width: 200px;
+    height: 66.7px;
+    font-size: 18px;
+  }
 }
 /* #endregion */
-
+@media screen and (max-width: 500px) {
+  .spots img{
+    width: 400px;
+  }
+}
 /* #region 450px PHONE */
 @media screen and (max-width: 450px) {
   .text h1{
     font-size: 1cm;
+    
   }
   .mid h1{
     font-size: 0.95cm;
   }
   .bot h1{
     font-size: 0.95cm;
+    margin-bottom: 50px;
   }
   .mid p{
     text-indent: 0in;
     font-size: 15px;
   }
-  .bot p{
-    font-size: 10px;
-  }
-
-  .spots {
-    grid-template-areas:
-      "card1 card1"
-      "card2 card3"
-      "card4 card5";
-    grid-template-columns: 50% 50%;
-
+  .spots{
+    margin: 0 50px 0 50px;
   }
   .spots img{
-    width: 100%;
-    max-height: 100px;
+    width: 400px;
+  }
+  .spots p{
+    font-size: 15px;
+    margin: 10px 0 50px 0;
   }
 
   .travel{
