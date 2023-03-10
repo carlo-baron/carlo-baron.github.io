@@ -80,8 +80,14 @@
     </div>
     <script>
         $(window).on("load", function(){
-            $(".loading-wrapper").fadeOut("slow");
-        });
+    // Disable scrolling
+    $("html, body").css("overflow", "hidden");
+    
+    $(".loading-wrapper").fadeOut("slow", function(){
+        // Enable scrolling after fading out is complete
+        $("html, body").css("overflow", "auto");
+    });
+});
     </script>
 </body>
 </html>
