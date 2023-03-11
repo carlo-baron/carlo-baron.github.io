@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body{
+  background-color: #fffaff;
+}
 
 /* #region Top/Entry */
 .top {
@@ -29,9 +32,6 @@
 .text h1 {
   font-size: 1.7cm;
   color: white;
-  border: black 1in;
-  animation: fadeIn;
-  animation-duration: 4s;
 }
 .text {
   position: absolute;
@@ -63,28 +63,38 @@
 /* #endregion */
 
 /*#region Middle/Introduction to Mindanao */
+.mid{
+  background-color: #303036;
+  padding-bottom: 100px;
+}
+
 .mid h1 {
-  margin-top: 100px;
+  padding-top: 100px;
   font-size: 1.5cm;
   text-align: center;
   text-transform: uppercase;
+  color: #fffaff;
 }
 .mid p {
   text-indent: 1in;
   font-size: 20px;
   margin: 50px 50px 10px 50px;
+  color: #fffaff;
+
 }
 /* #endregion */
 
 /* #region Bottom/Tourist Spots */
 .bot {
   text-align: center;
+  
 }
 .bot h1 {
-  margin-top: 100px;
+  padding-top: 100px;
   font-size: 1.5cm;
   text-align: center;
   text-transform: uppercase;
+  color: #303036;
 }
 .spots{
   display:flex;
@@ -99,8 +109,9 @@
 .spots p{
   font-size: 20px;
   margin: 0 50px 0 50px;
-}
+  color: #303036;
 
+}
 
 /* #endregion */
 
@@ -116,15 +127,38 @@
   margin-right: 22px;
   margin-left: 22px;
 }
-.travel button {
+.travel button{
   width: 300px;
   height: 100px;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
-  background-color: #171717;
+  background-color: #303036;
   border-radius: 10px;
+}
+
+.travel button:hover{
+  background-color: #212125;
+}
+
+/* #endregion */
+
+/* #region footer */
+footer {
+  background-color: #fc5130;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer p:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 /* #endregion */
 
@@ -217,17 +251,18 @@
   .mid h1{
     font-size: 1.05cm;
   }
+  .mid p{
+    text-indent: 0in;
+    margin: 15px 25px 15px 25px;
+  }
   .bot h1{
     font-size: 1.05cm;
     margin-bottom: 50px;
   }
-  .mid p{
-    text-indent: 0in;
-  }
 
   .spots{
     flex-flow: column;
-    margin: 0 50px 0 50px;
+    margin: 0 25px 0 25px;
   }
 
   .spots p{
@@ -235,6 +270,10 @@
   }
   #a{order: 1;}
   #b{order: 2;}
+
+  .spots img{
+    width: 100%;
+  }
   
   .travel{
     margin: 0px 0 50px 0;
@@ -248,11 +287,10 @@
 }
 /* #endregion */
 
-/* #region 450px PHONE */
+/* #region 550px PHONE */
 @media screen and (max-width: 550px) {
   .text h1{
     font-size: 1cm;
-    
   }
   .mid h1{
     font-size: 0.95cm;
@@ -263,17 +301,11 @@
   }
   .mid p{
     text-indent: 0in;
-    font-size: 15px;
-  }
-  .spots{
-    margin: 0 50px 0 50px;
-  }
-  .spots img{
-    width: 400px;
+    font-size: 18px;
   }
   .spots p{
-    font-size: 15px;
-    margin: 10px 0 50px 0;
+    font-size: 18px;
+    
   }
   .travel{
     flex-flow: column;
@@ -290,6 +322,8 @@
 }
 /* #endregion */
 
+/* #region 460px */
+
 @media screen and (max-width:460px) {
   .text h1{
     font-size: 1cm;
@@ -304,17 +338,11 @@
   }
   .mid p{
     text-indent: 0in;
-    font-size: 15px;
-  }
-  .spots{
-    margin: 0 50px 0 50px;
-  }
-  .spots img{
-    width: 300px;
+    font-size: 16px;
   }
   .spots p{
-    font-size: 12.5px;
-    margin: 10px 0 50px 0;
+    font-size: 16px;
+    
   }
 
   .travel{
@@ -330,3 +358,4 @@
     font-size: 18px;
   }
 }
+/* #endregion */
